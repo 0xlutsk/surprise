@@ -50,7 +50,7 @@ export function ScratchCard({ onComplete, play }: ScratchCardProps) {
     canvasRef,
     hostRef,
     threshold: 0.7,
-    onUnlock: () => playRef.current("reveal"),
+    onUnlock: () => playRef.current("a"),
   });
 
   useEffect(() => {

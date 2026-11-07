@@ -6,7 +6,9 @@ export type SoundName =
   | "reveal"
   | "whoosh"
   | "chime"
-  | "tick";
+  | "tick"
+  | "a"
+  ;
 
 type AudioContextWindow = Window &
   typeof globalThis & {
@@ -132,6 +134,10 @@ export function useAudio(muted: boolean) {
 
       if (sound === "tick") {
         note(ctx, 880, now, 0.09, 0.02, "triangle");
+        return;
+      }
+
+      if (sound === "a"){
         return;
       }
 

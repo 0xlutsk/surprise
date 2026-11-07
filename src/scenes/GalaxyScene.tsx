@@ -18,8 +18,8 @@ const shootingStars = [
 
 export function GalaxyScene({ play, onReplay }: GalaxySceneProps) {
   useEffect(() => {
-    const firstChime = window.setTimeout(() => play("chime"), 950);
-    const secondChime = window.setTimeout(() => play("sparkle"), 4850);
+    const firstChime = window.setTimeout(() => play("a"), 950);
+    const secondChime = window.setTimeout(() => play("a"), 4850);
     return () => {
       window.clearTimeout(firstChime);
       window.clearTimeout(secondChime);
@@ -88,7 +88,7 @@ export function GalaxyScene({ play, onReplay }: GalaxySceneProps) {
           <h1>
             <span className="galaxy-dedication__script">La mulți ani,</span>
             <span className="galaxy-dedication__name">
-              Dumi! <HeartIcon className="galaxy-dedication__heart" />
+              Dumi!
             </span>
           </h1>
           <span className="galaxy-dedication__age">21</span>
