@@ -64,26 +64,21 @@ export function CakeScene({ onComplete, play }: CakeSceneProps) {
     const timers = [
       window.setTimeout(() => {
         setCandle2Drop(true);
-        playRef.current("pop");
       }, 980),
       window.setTimeout(() => {
         setCandle1Drop(true);
-        playRef.current("pop");
       }, 1510),
       window.setTimeout(() => {
         setLighterStage("landed");
-        playRef.current("tick");
       }, 2130),
       window.setTimeout(() => {
-        setLighterStage("first");
-        playRef.current("sparkle");
+        setLighterStage("second");
       }, 2880),
       window.setTimeout(() => {
         setFlame2(true);
       }, 3230),
       window.setTimeout(() => {
-        setLighterStage("second");
-        playRef.current("sparkle");
+        setLighterStage("first");
       }, 3660),
       window.setTimeout(() => {
         setFlame1(true);
@@ -91,7 +86,6 @@ export function CakeScene({ onComplete, play }: CakeSceneProps) {
       window.setTimeout(() => {
         setLighterStage("away");
         setLit(true);
-        playRef.current("chime");
       }, 4560),
     ];
     return () => timers.forEach((timer) => window.clearTimeout(timer));
@@ -100,12 +94,10 @@ export function CakeScene({ onComplete, play }: CakeSceneProps) {
   useEffect(() => {
     if (!blowing) return;
     setShowWind(true);
-    playRef.current("whoosh");
 
     const extinguishTimer = window.setTimeout(() => {
       setExtinguished(true);
       setShowBurst(true);
-      playRef.current("sparkle");
     }, 520);
     const windTimer = window.setTimeout(() => setShowWind(false), 1550);
     const completeTimer = window.setTimeout(() => {
@@ -193,7 +185,7 @@ export function CakeScene({ onComplete, play }: CakeSceneProps) {
         >
           <div className="eyebrow eyebrow--warm">
             <SparkleIcon className="eyebrow__spark" />
-            <span>Scena 2 · dorința ta</span>
+            <span>O dorință ca în povești</span>
             <SparkleIcon className="eyebrow__spark" />
           </div>
           <AnimatePresence mode="wait">

@@ -21,9 +21,9 @@ function App() {
 
   useEffect(() => {
     const titles: Record<BirthdayScene, string> = {
-      entrance: "La mulți ani, Dumi! · 21",
-      cake: "Pune-ți o dorință ✨ · Dumi 21",
-      galaxy: "Un univers de urări · Dumi 21",
+      entrance: "La mulți ani!",
+      cake: "La mulți ani!",
+      galaxy: "La mulți ani!",
     };
     document.title = titles[scene];
   }, [scene]);
@@ -41,29 +41,6 @@ function App() {
       className={`app-shell ${isGalaxy ? "app-shell--galaxy" : ""}`}
       data-scene={scene}
     >
-      <div className="app-chrome">
-        <motion.div
-          className={`app-brand ${isGalaxy ? "app-brand--light" : ""}`}
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          aria-label="Dumi, 21 de ani"
-        >
-          <span className="app-brand__spark" aria-hidden="true">
-            ✦
-          </span>
-          <span className="app-brand__name">Dumi</span>
-          <span className="app-brand__age">21</span>
-        </motion.div>
-
-        <SceneDots active={scene} light={isGalaxy} />
-
-        <SoundToggle
-          muted={muted}
-          onToggle={() => setMuted((value) => !value)}
-          light={isGalaxy}
-        />
-      </div>
 
       <AnimatePresence mode="wait">
         {scene === "entrance" && (
