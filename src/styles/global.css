@@ -2001,7 +2001,7 @@ canvas {
 }
 
 .galaxy-dedication__script {
-  color: #ffe9f4;
+  color: #fff;
   font-family: "Caveat", cursive;
   font-size: clamp(2.7rem, 6.8vw, 6rem);
   font-weight: 600;
