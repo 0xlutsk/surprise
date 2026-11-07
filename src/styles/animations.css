@@ -1,0 +1,395 @@
+@keyframes soft-twinkle {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.85) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12) rotate(8deg);
+  }
+}
+
+@keyframes sound-bar {
+  from {
+    transform: scaleY(0.6);
+  }
+  to {
+    transform: scaleY(1.1);
+  }
+}
+
+@keyframes blob-drift {
+  0% {
+    transform: translate3d(-2%, -1%, 0) scale(0.96);
+  }
+  50% {
+    transform: translate3d(2%, 3%, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(4%, -2%, 0) scale(1);
+  }
+}
+
+@keyframes balloon-rise {
+  0% {
+    transform: translate3d(0, 18vh, 0) rotate(-2deg);
+  }
+  50% {
+    transform: translate3d(2.2vw, -62vh, 0) rotate(2.5deg);
+  }
+  100% {
+    transform: translate3d(-1.4vw, -148vh, 0) rotate(-2deg);
+  }
+}
+
+@keyframes balloon-sway {
+  0%,
+  100% {
+    transform: rotate(-3.2deg);
+  }
+  50% {
+    transform: rotate(3.6deg);
+  }
+}
+
+@keyframes sparkle-twinkle {
+  0%,
+  100% {
+    opacity: 0.22;
+    transform: scale(0.55) rotate(-8deg);
+  }
+  45% {
+    opacity: 0.95;
+    transform: scale(1.1) rotate(7deg);
+  }
+  65% {
+    opacity: 0.5;
+    transform: scale(0.8) rotate(2deg);
+  }
+}
+
+@keyframes heart-beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  12% {
+    transform: scale(1.16);
+  }
+  24% {
+    transform: scale(1);
+  }
+  36% {
+    transform: scale(1.1);
+  }
+  48% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bow-sway {
+  0%,
+  100% {
+    transform: translateX(-50%) rotate(-2.5deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(2.5deg);
+  }
+}
+
+@keyframes sheen-sweep {
+  0%,
+  38% {
+    left: -75%;
+  }
+  62%,
+  100% {
+    left: 145%;
+  }
+}
+
+@keyframes meter-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  60%,
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes cake-halo-breathe {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: translate(-50%, -50%) scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.06);
+  }
+}
+
+@keyframes flag-sway {
+  0%,
+  100% {
+    transform: rotate(var(--flag-rotate));
+  }
+  50% {
+    transform: rotate(calc(var(--flag-rotate) + 3.5deg));
+  }
+}
+
+@keyframes bokeh-float {
+  0%,
+  100% {
+    opacity: 0.24;
+    transform: translate3d(0, 0, 0) scale(0.85);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translate3d(8px, -18px, 0) scale(1.15);
+  }
+}
+
+@keyframes cake-hover {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes flame-flicker {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1, 1) rotate(-1deg);
+  }
+  22% {
+    transform: translateX(-50%) scale(0.94, 1.07) rotate(2deg);
+  }
+  46% {
+    transform: translateX(-50%) scale(1.04, 0.96) rotate(-2.5deg);
+  }
+  68% {
+    transform: translateX(-50%) scale(0.97, 1.04) rotate(1.5deg);
+  }
+  82% {
+    transform: translateX(-50%) scale(1.02, 0.98) rotate(-1deg);
+  }
+}
+
+@keyframes flame-glow {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: translateX(-50%) scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.08);
+  }
+}
+
+@keyframes flame-panic {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(0.92, 1.12) rotate(-7deg);
+    opacity: 0.78;
+  }
+  33% {
+    transform: translateX(-50%) scale(1.12, 0.82) rotate(8deg);
+    opacity: 1;
+  }
+  66% {
+    transform: translateX(-50%) scale(0.8, 1.18) rotate(-3deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes smoke-rise {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.5);
+  }
+  16% {
+    opacity: 0.88;
+  }
+  70% {
+    opacity: 0.42;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -11cqw) scale(2.7);
+  }
+}
+
+@keyframes spark-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(0deg);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1.15) rotate(35deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.55) rotate(85deg);
+  }
+}
+
+@keyframes button-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(226, 127, 176, 0));
+  }
+  50% {
+    transform: scale(1.028);
+    filter: drop-shadow(0 0 18px rgba(226, 127, 176, 0.26));
+  }
+}
+
+@keyframes button-shine {
+  0%,
+  44% {
+    left: -40%;
+  }
+  68%,
+  100% {
+    left: 130%;
+  }
+}
+
+@keyframes nebula-drift {
+  0% {
+    transform: translate3d(-2%, 1%, 0) scale(0.96);
+    opacity: 0.34;
+  }
+  50% {
+    transform: translate3d(2%, -2%, 0) scale(1.05);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(3%, 3%, 0) scale(1);
+    opacity: 0.4;
+  }
+}
+
+@keyframes dust-shimmer {
+  0%,
+  100% {
+    opacity: 0.38;
+  }
+  50% {
+    opacity: 0.72;
+  }
+}
+
+@keyframes galaxy-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes galaxy-spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes galaxy-breathe {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes core-pulse {
+  0%,
+  100% {
+    opacity: 0.82;
+    transform: translate(-50%, -50%) scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes core-twinkle {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+
+@keyframes shooting-star {
+  0%,
+  82% {
+    opacity: 0;
+    transform: rotate(-30deg) translate3d(-90px, 0, 0);
+  }
+  85% {
+    opacity: 0.95;
+  }
+  92% {
+    opacity: 0;
+    transform: rotate(-30deg) translate3d(190px, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-30deg) translate3d(190px, 0, 0);
+  }
+}
+
+@keyframes wish-float {
+  0%,
+  100% {
+    transform: rotate(var(--wish-rotate)) translateY(0);
+  }
+  50% {
+    transform: rotate(calc(var(--wish-rotate) + 1.2deg)) translateY(-7px);
+  }
+}
+
+@keyframes wish-fly {
+  0% {
+    opacity: 0.6;
+    transform: rotate(var(--wish-rotate)) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(calc(var(--wish-rotate) + 1deg)) scale(1.04);
+  }
+  100% {
+    opacity: 0.6;
+    transform: rotate(var(--wish-rotate)) scale(0.9);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cake-rig.is-floating {
+    animation: none !important;
+  }
+}
