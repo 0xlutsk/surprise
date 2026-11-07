@@ -91,7 +91,6 @@ export function GalaxyScene({ play, onReplay }: GalaxySceneProps) {
               Dumi!
             </span>
           </h1>
-          <span className="galaxy-dedication__age">21</span>
         </motion.div>
       </div>
 
