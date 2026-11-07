@@ -1,12 +1,10 @@
-# La mulți ani, Dumi! · 21
-
-An interactive, animated birthday website made for Dumi's 21st birthday. It runs entirely in the browser — no backend, no API keys, no external image assets.
+# Suprise
 
 ## The three scenes
 
-1. **Scratch card** — falling confetti, rising balloons and a pastel scratch layer. Scratch at least 70% of the card (mouse, finger or pen) to reveal the birthday message. The site moves on automatically a moment after the reveal.
-2. **Birthday cake** — a hand-drawn SVG cake drops in with the candles `2` and `1`. A lighter floats in and lights them one by one, then you blow the candles out with the **Suflă!** button. Wind, flicker, smoke, sparkles and a wish caption follow.
-3. **Galaxy finale** — a 3D starfield, a slowly approaching pastel galaxy, birthday wishes in many languages and a central dedication. A replay button brings you back to the scratch card.
+1. **Scratch card**
+2. **Birthday cake**
+3. **Galaxy finale**
 
 There is no way to skip the scratch or the candles: the story only moves forward through those interactions.
 
