@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { SceneDots } from "./components/SceneDots";
-import { SoundToggle } from "./components/SoundToggle";
 import { useAudio } from "./hooks/useAudio";
 import { CakeScene } from "./scenes/CakeScene";
 import { EntranceScene } from "./scenes/EntranceScene";
@@ -15,7 +13,7 @@ const sceneTransition = {
 
 function App() {
   const [scene, setScene] = useState<BirthdayScene>("entrance");
-  const [muted, setMuted] = useState(false);
+  const [muted] = useState(false);
   const play = useAudio(muted);
   const isGalaxy = scene === "galaxy";
 
